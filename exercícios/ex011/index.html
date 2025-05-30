@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinâmico</title>
+</head>
+<body>
+    <h1>Imagens Dinânicas</h1>
+    <p>ultilizarei a HTML5 para adicionar imagens em diferentes tamnhos, você pode abrir em diferentes dispositivos</p>
+    <picture>
+        <source media="(max-width:720px)" srcset="foto-pp.png" type="image/png">
+        <source media="(max-width:1020px)" srcset="foto-mm.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio </h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Island Blue - Casa Rosa's Tulum Vibes.mp3" type="audio/mpeg">
+        <source src="midia/Island Blue - Casa Rosa's Tulum Vibes.mp3" type="audio/ogg">
+        <source src="midia/Island Blue - Casa Rosa's Tulum Vibes.mp3" type="image/wav">
+        <p>Seu navegador não é compatível com a reprodução de áudio <a href="midia/Island Blue - Casa Rosa's Tulum Vibes.mp3" download="Island Blue - Casa Rosa's Tulum Vibes.mp3" type="audio/mpeg">baixe aqui</a></p>
+    </audio>
+</body>
+</html>
