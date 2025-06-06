@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário, checkbox e radio</title>
+</head>
+<body>
+    <h1>Teste</h1>
+    <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="imasc" value="M"> 
+
+        <label for="imasc">Masculino
+        </label> <br>
+
+        <input type="radio" name="sexo" id="ifem" value="F" checked> 
+
+        <label for="ifem">Feminino
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Esporte Favorito</legend>
+        <label for="ivolei">Vôlei</label> <input type="checkbox" name="volei" id="ivolei" checked> <br>
+        <label for="ibas">Basquete</label> <input type="checkbox" name="bas" id="ibas"> <br>
+        <label for="ifut">Futebol</label> <input type="checkbox" name="fut" id="ifut"> <br>
+    </fieldset>
+    <fieldset>
+        <legend>E-mail e telfone</legend>
+        <form action="cadastro.php" autocomplete="on" method="get">
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" placeholder="(xx) xxxxx-xxxx" pattern="^\(\d{2}\)d{4,5}--d{4}$">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+            
+        </form>
+    </fieldset>
+</body>
+</html>
