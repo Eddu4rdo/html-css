@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais sobre forms</title>
+</head>
+<body>
+    <h1>Select, Datalis, Textarea</h1>
+    <form action="cadastro.php" autocomplete="on" method="post">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="est" id="iest">
+                <option selected>Esolha seu Estado</option>
+                <optgroup label="Região sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+            </select>
+
+
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Admnistrador</option>
+                <option value="Prof">Professor</option>
+            </datalist> <br>
+
+            <label for="imsg">Mensagens</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+
+        </p>
+    </form>
+</body>
+</html>
