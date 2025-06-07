@@ -25,3 +25,16 @@ strong{
     color: rgb(222, 199, 22);
 }
 
+@media screen and (orientation: landscape){
+body{
+    background-image: url("cev-landscape.jpg");
+    background-position: left bottom;
+}
+}
+
+@media screen and (orientation: portrait) {
+    body{
+    background-image: url("../imagens/cev-portrait.jpg");
+    background-position: center bottom;
+}
+}
